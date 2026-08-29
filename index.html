@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Video Player</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .player {
+      width: 100%;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+
+    video {
+      width: 100%;
+      display: block;
+      background: #000;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="player">
+    <h1>My Video Player</h1>
+
+    <video controls playsinline>
+      <source src="YOUR_VIDEO_URL_HERE" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+
+</body>
+</html>
